@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+build
+coverage
+.vercel
+.npm-cache
+data
+public
+Docs
+*.lock
+*.log

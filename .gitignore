@@ -1,0 +1,56 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+.npm-cache/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# testing
+/coverage
+
+# local data (Dexie / IndexedDB snapshots, seed CSVs, scratch)
+/data
+
+# local-only docs reference material — never push to GitHub.
+# Images: source photos of the paper register / fee book the app replaces;
+#   kept locally for reference, redacted versions ship to the mockup.
+# Marketing: draft posts and shared-prompt mirrors used for outbound,
+#   kept local until the principal approves a public version.
+/Docs/Images/
+/Docs/Marketing/
+
+# env files — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# editor / OS
+.DS_Store
+~$*
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
